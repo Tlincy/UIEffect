@@ -298,7 +298,7 @@ namespace Coffee.UIExtensions
 			}
 
 			MaterialRepository.Unregister(_materialEntity);
-			_materialEntity = MaterialRepository.Register(textMeshPro.font.material, hash, m =>{
+			_materialEntity = MaterialRepository.Register(material, hash, m =>{
 				Debug.LogFormat(this, "Register {0}, {1}", hash, shaderNameX, targetGraphic.material);
 				m.material.shader = Shader.Find(shaderNameX);
 				m.material.name = "hogehoge";
